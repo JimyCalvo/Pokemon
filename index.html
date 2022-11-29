@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Pokémo</title>
+    <link rel="shortcut icon" href="/src/img/poke-ball.png">
+    <link rel="stylesheet" href="/src/css/custom.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="contaier-fluid p-1 ">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class=" container-fluid d-lg-none">
+                        <img src="/src/img/pngwing.com.png" alt="logo" height="100px">
+                    </div>
+                    <div class="  d-none d-lg-block container-fluid text-center">
+                        <img src="/src/img/pika.png" alt="pikachu" height="150px">
+                    </div>
+
+                </div>
+                <div class="d-none d-lg-block col-lg-6 text-center ">
+                    <img src="/src/img/batalla.png" alt="batalla" height="100px">
+                </div>
+
+                <div class="d-none d-md-block col-md-6 col-lg-3 text-end">
+                    <img class="img p-1" src="/src/img/poke-ball.png" alt="logo" height="100px">
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <!-- ========== Start Selection Pokemon ========== -->
+        <section class="contaier p-1 m-5">
+            <div class="text-center bg-light">
+                <br>
+                <h5>Seleccione los Pokémones a Pelear.</h5>
+                <br>
+            </div>
+            <div class="row " id="listPokemon">
+                <!-- ========== Start Pokemon N1 ========== -->
+                <div class="col-5">
+                    <div class="card m-3" id="pokemon-1">
+                        <div class="container-fluid text-center" id="panel">
+                            <img height="240px">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center bg-dark bg-gradient text-white text-capitalize p-1 m-2">
+                                PokeMoN</h5>
+                            <div class="row">
+                                <div class="col-4 text-center">
+                                    <h4>HP:</h4>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <p class="fs-4"></p>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <span>❤❤❤</span> 
+                                </div>
+                            </div>
+
+                            <h6 class="card-text text-capitalize"></h6>
+                            <h4 class="text-primary">Habilidades: </h4>
+                            <div class="card-text text-capitalize">
+                                <ol>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Pokemon N1 ========== -->
+                <!-- ========== Start Centro ========== -->
+                <div class="col-2">
+                    <div class="row pt-5">
+                        <button type="submit" class="btn-grad " onclick="btnSeleccionar()">Seleccionar</button>
+                    </div>
+                    <div class="row pt-5">
+                        <img src="/src/img/vs.png" alt="vs" height="100px">
+                    </div>
+                </div>
+                <!-- ========== End Centro ========== -->
+                <!-- ========== Start Pokemon N2 ========== -->
+                <div class="col-5">
+                    <div class="card m-3" id="pokemon-2">
+                        <div class="container-fluid text-center" id="panel">
+                            <img height="240px">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center bg-dark bg-gradient text-white text-capitalize p-1 m-2">
+                                PokeMoN</h5>
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <h4>HP:</h4>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <p class="fs-4"></p>
+                                    </div>
+                                    <div class="col-5 text-center">
+                                        <span>❤❤❤</span> 
+                                    </div>
+                                </div>
+                            <h4 class="text-primary">Habilidades: </h4>
+                            <div class="card-text text-capitalize">
+                                <ol>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== End Pokemon N2 ========== -->
+            </div>
+        </section>
+        <!-- ========== End Selection Pokemon ========== -->
+
+        <!-- ========== Start Lista de usuarios ========== -->
+
+        <!-- ========== End Lista de usuarios ========== -->
+        <div class="container" id="listaUser">
+            <div class="row">
+                <div class="col-12 my-3">
+                    <h1 class="text-center">
+                        Lista de usuarios
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>CORREO</th>
+                            <th>CIUDAD</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </main>
+    <footer class="container-fluid text-center  bg-dark">
+        <p class="text-secondary py-5">Elaborado por  <a href="">@JimyCalvo </a></p>
+    </footer>
+    <script src="./src/js/datosPokemon.js"></script>
+    <script src="./src/js/datosUsers.js"></script>
+</body>
+
+</html>
